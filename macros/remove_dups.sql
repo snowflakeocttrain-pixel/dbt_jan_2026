@@ -1,6 +1,6 @@
 {% macro remove_dups_ts(tgt_table,src_table,unique_key,ts_col) %}
 
-CREATE OR REPLACE TABLE IF NOT EXISTS CURATED_DATA.{{tgt_table}} AS select * from raw_data.{{src_table}} where 1=2;
+CREATE  TABLE IF NOT EXISTS CURATED_DATA.{{tgt_table}} AS select * from raw_data.{{src_table}} where 1=2;
 
 {% if ts_col == 'NA' %}
 
