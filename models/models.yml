@@ -1,0 +1,23 @@
+
+version: 2
+
+models:
+    - name: prod_revenue
+      description: "A starter dbt model"
+      columns:
+          - name: revenue
+            description: "The primary key for this table"
+            tests:
+                - check_negative
+          - name: NAME
+            description: "The primary key for this table"
+            tests:
+                - unique
+                - not_null                
+    - name: emp_gt
+      description: "A starter dbt model"
+      columns:
+          - name: average_sal
+            description: "The primary key for this table"
+            tests:
+                - check_negative                

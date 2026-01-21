@@ -1,0 +1,1 @@
+select * from {{ref('prod_revenue')}} where revenue<0

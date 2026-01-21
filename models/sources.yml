@@ -1,0 +1,12 @@
+version: 2
+
+sources:
+  - name: RAW_DATA # this is the source_name
+    database: DEV
+    schema: RAW_DATA
+    tables:
+      - name: products
+        columns:
+          - name: prod_id
+            tests:
+              - unique
